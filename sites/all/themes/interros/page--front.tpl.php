@@ -164,5 +164,5 @@
                 </div> <!-- /#footer -->
             <?php endif; ?>
 
-        </div></div> <!-- /.section, /#footer-wrapper -->
+        </div></div>
 </footer>
