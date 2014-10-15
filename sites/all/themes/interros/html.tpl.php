@@ -74,7 +74,7 @@
 
     <?php print $page_top; ?>
 
-    <header>
+    <header class="site-header">
         <div class="top-bar">
             <div class="container">
                 <h1 class="logo"><span>Оборудование для жизнеобеспечения зданий</span></h1>
@@ -120,8 +120,8 @@
             </div>
         </div>
         <div class="slider">
-
-            <?php echo render($region_name) ?></div>
+            <?php echo render($region_name) ?>
+        </div>
     </header>
 
     <?php print $page; ?>
