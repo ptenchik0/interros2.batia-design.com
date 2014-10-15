@@ -1,2 +1,2 @@
-<?php print render($page['header']);?>
-<?php print $content; ?>
+<?php //print render($page['header']);?>
+<?php print render($page['content']); ?>
