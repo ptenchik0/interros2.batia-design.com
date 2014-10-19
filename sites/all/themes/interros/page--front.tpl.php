@@ -85,34 +85,22 @@
  */
 ?>
 
-
-
-
 <div class="d-line">
-    <div class="container">
+    <div class="wrap">
         <?php if ($page['dark_line']): ?>
             <?php print render($page['dark_line']); ?>
         <?php endif; ?>
-
-        <!--<h3></h3>
-        <ul class="cat-nav">
-            <li><a href="/osvetitelnoe-oborudovanie/" class="ci1"><i></i>Осветительное оборудование</a></li>
-            <li><a href="/promyshlennaya-otopitelnaya-tehnika/" class="ci2"><i></i>Промышленная отопительная техника</a></li>
-            <li><a href="/transformatornye-podstantsii/" class="ci3"><i></i>Трансформаторные подстанции</a></li>
-            <li><a href="/oborudovanie-dlya-ochistki-i-perekachki-stochnyh-vod/" class="ci4"><i></i>Оборудование для очистки и перекачки сточных вод</a></li>
-        </ul>-->
     </div>
 </div>
 
-
-
-<div id="about" class="content">
-    <div class="container">
-        <?php print render($title_prefix); ?>
-        <h3 class="decor"><?php print $title; ?></h3>
-        <?php print render($title_suffix); ?>
-        <div class="content-wrap">
-
+<section class="content">
+    <article class="wrap">
+        <header>
+            <?php print render($title_prefix); ?>
+            <h3 class="decor"><?php print $title; ?></h3>
+            <?php print render($title_suffix); ?>
+        </header>
+        <div class="content-wrap ">
             <?php if ($page['featured']): ?>
                 <div id="featured"><div class="section clearfix">
                         <?php //print render($page['featured']); ?>
@@ -123,9 +111,6 @@
                 <div id="highlighted"><?php //print render($page['highlighted']); ?></div>
             <?php endif; ?>
             <a id="main-content"></a>
-
-
-
             <?php if ($tabs && $is_admin): ?>
                 <div class="tabs">
                     <?php print render($tabs); ?>
@@ -138,33 +123,9 @@
                 </ul>
             <?php endif; ?>
             <?php print render($page['content']); ?>
-
         </div>
-    </div>
+    </article>
     <div class="decor-line"></div>
-</div>
+</section>
 
-
-
-<footer>
-    <div id="footer-wrapper"><div class="section">
-
-            <?php //if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
-                <div id="footer-columns" class="clearfix">
-                    <?php //print render($page['footer_firstcolumn']); ?>
-                    <?php //print render($page['footer_secondcolumn']); ?>
-                    <?php //print render($page['footer_thirdcolumn']); ?>
-                    <?php //print render($page['footer_fourthcolumn']); ?>
-                </div> <!-- /#footer-columns -->
-            <?php //endif; ?>
-
-            <?php if ($page['footer']): ?>
-                <div id="footer" class="clearfix">
-                    <?php print render($page['footer']); ?>
-                </div> <!-- /#footer -->
-            <?php endif; ?>
-
-        </div></div>
-</footer>
-
-<!-- добавили комент в файл -->
+<?php print render($page['footer']); ?>
