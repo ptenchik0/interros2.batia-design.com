@@ -5,7 +5,11 @@
     </nav>
     <div class="wrap">
 
-        <div class="f-logo"><a href="http://interros.batia-design.com/" title="НПО ИнтерРос" rel="home"><img src="http://interros.batia-design.com/wp-content/themes/interros/img/logo-footer.png"></a></div>
+        <div class="f-logo">
+            <a href="/" title="<?php print t('Home'); ?>" rel="home" id="logo">
+                <img src="http://interros.batia-design.com/wp-content/themes/interros/img/logo-footer.png" alt="<?php print t('Home'); ?>">
+            </a>
+        </div>
         <ul class="f-nav">
             <li><a href="/osvetitelnoe-oborudovanie/"><i class="f1"></i>Осветительное<br>оборудование</a></li>
             <li><a href="/promyshlennaya-otopitelnaya-tehnika/"><i class="f2"></i>Промышленная<br>отопительная техника</a></li>
@@ -18,7 +22,5 @@
             <a class="btn">Обратная связь</a>
         </div>
     </div>
-
-
 </footer>
 <?php endif; ?>
